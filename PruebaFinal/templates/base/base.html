@@ -22,10 +22,8 @@
             <i class="fa fa-plane icon-paper-plane-empty i-nav"></i>
             <div class="main-navbar__head-one" id="up">
                 <div class="div">
-                        <a class="btn" style="background-color:#1b9696; color: white;" href="{% url 'encargado:encargado_principal' %}">Inicio</a>
-                        <a class="btn" style="background-color:#1b9696; color: white;" href="{% url 'encargado:encargado_list' %}">Encargado</a>
-                        <a class="btn" style="background-color:#1b9696; color: white;" href="{% url 'task:task_list' %}">Task</a>
-                        <a class="btn" style="background-color:#1b9696; color: white;" href="{% url 'task:task_list_tar' %}">Tarjetas Task</a>
+                    <a class="btn" style="background-color:#1b9696; color: white;"
+                        href="{% url 'encargado:encargado_principal' %}">researchsuit</a>
                 </div>
             </div>
             <div class="main-navbar__head-two" id="up">
@@ -38,13 +36,21 @@
                 <div class="main-navbar__head-one__two">
                     <i class="fa fa-cog icon-cog head-two__i-one__three"></i>
                     <i class="fa fa-down-dir icon-sort-down head-two__i-one__two"></i>
+                    <a class="btn" style="background-color:#1b9696; color: white;"
+                        href="{% url 'encargado:encargado_principal' %}">Inicio</a>
+                    <a class="btn" style="background-color:#1b9696; color: white;"
+                        href="{% url 'encargado:encargado_list' %}">Encargado</a>
+                    <a class="btn" style="background-color:#1b9696; color: white;"
+                        href="{% url 'task:task_list' %}">Task</a>
+                    <a class="btn" style="background-color:#1b9696; color: white;"
+                        href="{% url 'task:task_list_tar' %}">Tarjetas Task</a>
                 </div>
             </div>
         </div>
     </div>
     {% endblock %}
 
-       {% block left %}
+    {% block left %}
     <div class="cont-left" id="rojo">
         <div class="cont-left__one">
             <i class="fa fa-home icon-home i-nav-left"></i>
@@ -60,6 +66,9 @@
         </div>
         <div class="cont-left__one">
             <i class="fa fa-users icon-users i-nav-left__one"></i>
+        </div>
+        <div class="cont-left__one">
+            <i class="fa fa-logout icon-login i-nav-left__one"></i>
         </div>
         <div class="cont-left__one">
             <i class="fa fa-logout icon-login i-nav-left__one"></i>

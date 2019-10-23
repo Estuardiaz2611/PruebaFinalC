@@ -7,7 +7,7 @@
         <div class="card__head" id="up">
             <div class="card__head__one" id="up">
                 <label class="card__h1">{{task.titulo_task}}</label><br>
-                <p class="card__p">Entrega: {{task.fecha_entrega}}</p>
+                <p class="card__p">Fecha Entrega: {{task.fecha_entrega}}</p>
                 <i class="fa icon-snapchat-ghost card__icon__one"></i>
             </div>
         </div>
@@ -26,6 +26,7 @@
             </div>
         </div>
         <div class="card__cont" id="blanco">
+            <p class="card__medio">Creado por: {{task.encargado}}</p> <hr style="margin-top: 2.5rem;">
             <p class="card__medio">{{task.descripcion}}</p>
         </div>
     </div>
