@@ -26,5 +26,5 @@ class EncargadoForm (forms.ModelForm):
             'apellido_encargado': forms.TextInput(attrs={'class':'form-control'}),
             'genero': forms.TextInput(attrs={'class':'form-control'}),
             'nombre_usuario': forms.TextInput(attrs={'class':'form-control'}),
-            'fecha_nacimiento': forms.TextInput(attrs={'class':'form-control'}),
+            'fecha_nacimiento': forms.SelectDateWidget(attrs={'class':'form-control'}),
         }

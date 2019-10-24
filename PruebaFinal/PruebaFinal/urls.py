@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', admin.site.urls),
     path('encargado/', include (('apps.encargado.urls', 'encargado'), namespace='encargado')),
     path('task/', include (('apps.task.urls', 'task'), namespace='task')),
     path('accounts/login/', LoginView.as_view(template_name='inde.html'), name="login"),

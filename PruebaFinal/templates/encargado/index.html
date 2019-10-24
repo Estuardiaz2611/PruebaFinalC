@@ -1,1 +1,36 @@
-{% extends 'base/base.html' %}
+{% extends 'base/base2.html' %}
+
+{% block header %}
+<!--++++++++++++++++++++Navbar+++++++++++++++++++++++++++++++-->
+<div class="cont-up" id="rojo">
+    <div class="main-navbar">
+
+        <div class="main-navbar__head-one" id="up">
+            <div class="div">
+                <a class="btn" style=" color: white; margin-left:0.5rem; font-size:1.5rem"
+                    href="{% url 'encargado:encargado_principal' %}">researchsuit</a>
+                <input class="div__input" type="text" placeholder="Busca estudiantes, padres o maestros aqui..">
+                <button class="div__button"><i class="fa icon-search"></i></button>
+            </div>
+        </div>
+        <div class="main-navbar__head-two" id="up">
+            <i class="fa fa-bell icon-bell-alt head-two__i-one__one"></i>
+            <div class="main-navbar__head-one__two">
+                <a class="btn" style="background-color:#0079d1; color: white;"
+                    href="{% url 'encargado:encargado_list' %}">Encargado</a>
+                <a class="btn" style="background-color:#0079d1; color: white;"
+                    href="{% url 'task:task_list' %}">Task</a>
+                <a class="btn" style="background-color:#0079d1; color: white;"
+                    href="{% url 'task:task_list_tar' %}">Tarjetas Task</a>
+            </div>
+            <div>
+                <i class="fa fa-user icon-user-circle head-two__i"></i>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block medio %}
+
+{% endblock %}
