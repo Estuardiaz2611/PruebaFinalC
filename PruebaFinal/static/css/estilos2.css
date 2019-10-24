@@ -26,7 +26,7 @@
     background-color: #e9eeee; }
   
   #up {
-    background-color: #1b9696; }
+    background-color: #0079d1; }
 
   body {
     background-color: #e9eeee;
@@ -46,7 +46,7 @@
     border-radius: 8px; }
   
   .label-titulos {
-    color: #188b8c;
+    color: #0079d1;
     padding-bottom: 1rem;
     font-size: 1.8rem; }
   
@@ -146,7 +146,7 @@
   
   .i-nav-left__one {
     font-size: 1.5rem;
-    color: #799293; }
+    color: #d4d4d4; }
   
   .i-nav-left__card {
     color: white;
