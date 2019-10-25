@@ -7,7 +7,7 @@
         <i class="fa fa-plane icon-paper-plane-empty i-nav"></i>
         <div class="main-navbar__head-one" id="up">
             <div class="div">
-                <a class="btn" style="background-color:#1b9696; color: white;"
+                <a class="btn" style="background-color:#0079d1; color: white;"
                     href="{% url 'login' %}">Login</a>
             </div>
         </div>
@@ -29,12 +29,12 @@
 
 {% block content %}
 <form method="post" class="form-group card" style="margin-left:30rem;margin-top:0; top:5rem;">
-    <h1 style="text-align:center;color:#1b9696; padding: 0.5rem">Iniciar Sesion</h1>
+    <h1 style="text-align:center;color:#0079d1; padding: 0.5rem">Iniciar Sesion</h1>
     {% csrf_token %}
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="username">Nombre de Usuario: admin</label>
+                <label for="username">Nombre de Usuario</label>
                 <input class="form-control" type="text" name="username">
             </div>
         </div>
@@ -42,7 +42,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="username">Password: admin</label>
+                <label for="username">Password</label>
                 <input class="form-control" type="password" name="password">
             </div>
         </div>
